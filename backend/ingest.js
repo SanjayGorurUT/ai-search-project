@@ -1,13 +1,13 @@
 const { Client } = require('@elastic/elasticsearch');
 
-const esClient = new Client({ node: 'http://localhost:9200' });
+const esClient = new Client({ node: 'http://localhost:9201' });
 
 // Sample documentation for elasticsearch
 
 async function ingestData() {
     const docs = [
-        { title: 'JavaScript Guide', content: 'JavaScript is a versatile language used for web development.' },
-        { title: 'Python Basics', content: 'Python is an easy-to-learn programming language with many applications.' }
+        { title: 'JavaScript Guide', content: 'javascript' },
+        { title: 'Python Basics', content: 'python' }
     ];
 
     for (const doc of docs) {

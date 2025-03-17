@@ -11,7 +11,7 @@ app.get('/', (req, res) => res.send('AI-Powered Search API is Running!'));
 
 app.use('/search', require('./search'));
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 8081;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
     
 // In the  backend/search.js  file, we will define the search API.
